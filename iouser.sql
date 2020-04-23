@@ -30,6 +30,6 @@ show DATABASES;
 use emsdb;
 show tables;
 
-
-
+GRANT ALL PRIVILEGES ON *.* TO 'books'@'localhost';
+flush PRIVILEGES;
 DESCRIBE tbl_ems;

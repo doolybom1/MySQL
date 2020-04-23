@@ -42,7 +42,7 @@ INSERT INTO `emsdb`.`tbl_menu`
 VALUES('M05','M02','게시판정리','#');
 
 UPDATE tbl_menu SET menu_p_id = NULL WHERE menu_id IN ('M01','M02');
-
+	
 USE EMSDB;
 
 CREATE TABLE tbl_comment(
@@ -54,5 +54,9 @@ CREATE TABLE tbl_comment(
 );
 
 drop table tbl_comment;
-select * from tbl_comment;
+select * from tbl_product;
+select * from tbl_cart;
 
+desc tbl_boards;
+select * from tbl_boards;
+drop table tbl_boards;
